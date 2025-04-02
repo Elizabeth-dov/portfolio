@@ -1,0 +1,99 @@
+.experienceContainer {
+    padding-top: 100px; /* Górny padding */
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .experienceSection {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .experienceSection:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sectionTitle {
+    color: #C5BAFF;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .sectionTitle:hover {
+    color: #A899FF; /* Nieco jaśniejszy odcień po najechaniu */
+  }
+  
+  
+  .arrow {
+    font-size: 18px;
+  }
+  
+  .sectionContent {
+    font-size: 16px;
+  color: black; /* Zmiana koloru tekstu na fioletowy */
+  margin-top: 10px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  }
+  .sectionContent p, 
+.sectionContent li {
+  color: black; 
+  font-style: italic;
+  text-align: left;
+}
+  .sectionContent ul {
+    padding-bottom: 50px;
+  }
+  .sectionContentImage{
+    width: 100%;
+    max-width: 300px; /* Maksymalna szerokość */
+    height: auto;
+    border-radius: 8px;
+  }
+  .subSection {
+    margin-top: 10px;
+  }
+  
+  .subSectionTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .subButton {
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .subButton:hover {
+    background-color: #0056b3;
+  }
+  

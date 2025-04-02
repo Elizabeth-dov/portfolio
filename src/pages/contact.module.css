@@ -1,0 +1,67 @@
+.contactContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    /* Użycie flexboxa do wyśrodkowania */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Wyśrodkowanie w pionie */
+    align-items: center; /* Wyśrodkowanie w poziomie */
+    min-height: 100vh; /* Zapewnienie, że sekcja zajmie przynajmniej całą wysokość ekranu */
+}
+.contactContainer p {
+  color: #a593ff;
+  font-family: "Boldonse", system-ui;
+  font-style: normal;
+  font-size: 30px;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contactInfo {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.contactInfo p {
+    font-size: 1.1rem;
+    color: black;
+    margin: 10px 0;
+}
+
+.contactInfo a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contactInfo a:hover {
+    text-decoration: underline;
+}
+
+.contactInfo .email::before {
+    content: "📧 "; /* Dodajemy emotikonę e-maila */
+}
+
+.contactInfo .phone::before {
+    content: "📱 "; /* Dodajemy emotikonę telefonu */
+}
+
+.contactInfo .linkedin::before {
+    content: "🔗 "; /* Dodajemy emotikonę linku do LinkedIn */
+}

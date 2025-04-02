@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;  /* Zapewnienie, że tło będzie obejmować całą stronę */
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(90deg, #FBFBFB, #C4D9FF); 
+}
+
+/* Nagłówek */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #FBFBFB, #C4D9FF);  /* Gradient w nagłówku */
+  color: #F2EFE7;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie elementów w poziomie */
+  align-items: center; /* Wyśrodkowanie elementów w pionie */
+}
+
+nav h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto; /* Przesunięcie h1 na początek */
+}
+
+nav .space-x-4 {
+  display: flex;  /* Rozkładanie linków w poziomie */
+  gap: 15px; /* Odstęp między linkami */
+}
+
+/* Styl dla linków w nawigacji */
+nav .space-x-4 a {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Kolor aktywnego linku */
+nav .space-x-4 a.active {
+  color: #C5BAFF;  
+  font-weight: bold;
+}
+
+/* Efekt po najechaniu na link */
+nav .space-x-4 a:hover {
+  color: #C5BAFF;
+}
+
+/* Sekcje */
+section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  position: relative;
+}
+
+section:nth-child(even) {
+  background-color: #F1E7E7;
+}
+
+section h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  color: #FBFBFB;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* Efekt zmiany koloru sekcji po najechaniu na przycisk */
+section:hover {
+  background-color: #cce5ff; /* Jasny niebieski */
+}
+
+/* Sekcja Home */
+section.home {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), 
+              url('https://www.example.com/your-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+
+section.home h2 {
+  font-size: 48px;
+}
+
+section.home p {
+  font-size: 22px;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Przyciski */
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #00bcd4;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Zmiana koloru sekcji, gdy mysz zbliża się do przycisku */
+section:hover button {
+  background-color: #007bb5; /* Głębszy niebieski */
+}
+
+button:hover {
+  background-color: #008c9e;
+}
+
+/* Stopka */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #FBFBFB, #C4D9FF); /* Gradient w stopce */
+  color: #F2EFE7;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie elementów w poziomie */
+  align-items: center; /* Wyśrodkowanie elementów w pionie */
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer a {
+  color: #C5BAFF;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #A899FF;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+
+  nav h1 {
+    font-size: 20px;
+  }
+
+  nav .space-x-4 a {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  section p {
+    font-size: 16px;
+  }
+}

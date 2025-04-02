@@ -1,0 +1,261 @@
+/* Dodajemy do .mountain, żeby wyśrodkować długi tekst */
+.aboutLatte{
+  margin-bottom: 200px;
+}
+.hobbyImageClickable {
+  cursor: pointer;
+  border-radius: 8px;
+  width: 80%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hobbyImageClickable:hover {
+  transform: scale(1.05); /* Powiększenie obrazka po najechaniu */
+}
+
+.mountain {
+  padding-bottom: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-style: italic;
+  color: black;
+  justify-content: center;
+  max-width: 800px; /* Ustalamy maksymalną szerokość tekstu */
+  margin: 0 auto; /* Wyśrodkowujemy */
+  line-height: 1.8; /* Zwiększamy odstępy między wierszami dla lepszej czytelności */
+}
+
+/* Pozostałe style */
+.aboutList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+  padding-top: 100px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.aboutList li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left {
+  justify-content: center;
+  text-align: center;
+}
+
+.left p {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.image img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  padding-top: 30px;
+}
+.aboutContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+}
+
+.aboutSkills, .aboutLanguages {
+  flex: 1;
+  background-color: #FBFBFB;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.aboutSkills h1, .aboutLanguages h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #a593ff;
+}
+
+.skillsList, .languagesList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skillsList li, .languagesList li {
+  margin-bottom: 15px;
+}
+
+.skillsList li p, .languagesList li p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-left: 20px;
+  position: relative;
+}
+.skillsList li p::before {
+  content: '•';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #3498db;
+}
+.skillsCategory{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.circularImage {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  padding-bottom: 50px;
+}
+
+.title {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #C5BAFF;
+}
+.titleHobby{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-size: 58px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #C5BAFF;
+}
+p {
+  font-size: 16px;
+  color: black;
+  max-width: 600px;
+  line-height: 1.6;
+  text-align: center;
+ 
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.hobbyButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #c5baff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.hobbyButton:hover {
+  background-color: #a593ff;
+}
+
+.hobbySection {
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(90deg, #FBFBFB, #C4D9FF); 
+  border-radius: 10px;
+  text-align: center;
+}
+.separator {
+  border: 0;
+  border-top: 4px solid #000; /* Gruba czarna linia */
+  margin: 20px 0; /* Odstępy z góry i z dołu */
+}
+.hobbyItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.hobbyImage {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+.hobbyImagesContainer {
+  display: flex;
+  justify-content: space-between; /* Równomiernie rozdziela zdjęcia */
+  align-items: center; /* Wyrównanie zdjęć w pionie */
+  margin-bottom: 30px; /* Dodanie odstępu poniżej */
+}
+
+/* Styl dla każdego zdjęcia w kontenerze */
+.hobbyImageIt {
+  width: 45%; /* Dostosuj szerokość zdjęć, aby były oddzielone */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.hobbyImageIt:hover {
+  transform: scale(1.1);
+}
+.hobbyImage {
+  width: 90%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.hobbyImage:hover {
+  transform: scale(1.1);
+}
+
+.hobbySection.show {
+  max-height: 500px;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .aboutList {
+    flex-direction: column;
+  }
+
+  .aboutList li {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    max-width: 90%;
+  }
+}
